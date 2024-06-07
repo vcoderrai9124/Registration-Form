@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background-color:chartreuse;
+        }
+        form {
+            width:600px;
+        }
+        input {
+            margin:5px;
+        }
+        h1, p{
+            text-align:center;
+        }
+        form{
+            margin: auto;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>  
+    <p>Fill the form with correct information</p> 
+    <form action="Server URL">
+        <fieldset>
+            <label for="Firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="Lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" min="8" max="20" required>
+            <label for="Mobile Number">Mobile Number</label>
+            <input type="Mobile number" id="Mobile number" name="Mobile number" required>
+            <label for="Gender">Gender :</label>
+            <input type="radio" id="male" name="Gender"required>male
+            <input type="radio" id="female" name="Gender"required>female
+            <input type="radio" id="other" name="Gender"required>other
+            <br/>
+            <label for="date">Date:</label>
+            <input type="date" id="birthday" name="birthday"required>
+            <br>
+            <label for="File">Uplode Picture</label><br>
+            <input type="file" id="Uplodepicture" name="Uplodepicture"required>
+            <input type="Submit" value="submit">
+        </fieldset>
+    </form>
+</body>
+</html>
